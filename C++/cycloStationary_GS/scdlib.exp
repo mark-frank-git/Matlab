@@ -1,0 +1,8 @@
+scdlib.dll
+_mlfDfsm_pace		_mlfDfsm_pace
+_mlfPlotscd		_mlfPlotscd
+_mlxDfsm_pace		_mlxDfsm_pace
+_mlxPlotscd		_mlxPlotscd
+_scdlibInitialize		_scdlibInitialize
+_scdlibInitializeWithHandlers		_scdlibInitializeWithHandlers
+_scdlibTerminate		_scdlibTerminate

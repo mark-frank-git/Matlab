@@ -1,0 +1,5 @@
+::
+:: Batch file for compiling Matlab m files to C library
+::
+mcc -t -W lib:scdlib -L C -T link:lib -h libmwsglm.mlib -c libmmfile.mlib PlotSCD.m
+

@@ -1,0 +1,6 @@
+scdlib.dll
+_mlfPlotscd		_mlfPlotscd
+_mlxPlotscd		_mlxPlotscd
+_scdlibInitialize		_scdlibInitialize
+_scdlibInitializeWithHandlers		_scdlibInitializeWithHandlers
+_scdlibTerminate		_scdlibTerminate

@@ -1,0 +1,5 @@
+
+libSCDWrapper_LIBRARIES_DEPEND_UPON	+= -lmx -lscdlib -lmclmcr
+libSCDWrapper_INCLUDE_DIRS 		+= -IC:/Applications/Matlab/extern/include
+libSCDWrapper_LIB_DIRS			+= -LC:/Applications/Matlab/extern/include/gcclibs
+
