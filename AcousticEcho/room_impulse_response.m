@@ -24,17 +24,20 @@ function impulseResponse = room_impulse_response(fs, frameSize)
 M     = fs/2 + 1;
 [B,A] = cheby2(4,20,[0.1 0.7]);
 impulseResponseGenerator = dsp.IIRFilter('Numerator', [zeros(1,6) B], ...
-    'Denominator', A);
+                                         'Denominator', A);
 
-FVT = fvtool(impulseResponseGenerator);  % Analyze the filter
-FVT.Color = [1 1 1];
+filterVisualization = 0;
+if(filterVisualization)
+  FVT       = fvtool(impulseResponseGenerator);  % Analyze the filter
+  FVT.Color = [1 1 1];
+end
 
 impulseResponse = impulseResponseGenerator( ...
         (log(0.99*rand(1,M)+0.01).*sign(randn(1,M)).*exp(-0.002*(1:M)))');
 impulseResponse = impulseResponse/norm(impulseResponse)*4;
 
 plotImpulse = 0;
-if(plotImpulse) then
+if(plotImpulse)
   fig = figure;
   plot(0:1/fs:0.5, impulseResponse);
   xlabel('Time (s)');

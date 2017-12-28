@@ -2,7 +2,7 @@ function process_speech(fs, frameSize, speechSignal, title, player)
 % **********************************************************************
 % function process_speech(fs, frameSize, speechSignal, title, player)
 %
-% Processes and time domain displays input speech signal
+% Plays and time domain displays input speech signal
 %
 % Description:
 % -----------
@@ -10,8 +10,8 @@ function process_speech(fs, frameSize, speechSignal, title, player)
 %
 % Input variables:
 % -----------------------
-% fs = sample rate in Hz
-% frameSize = size in samples
+% fs           = sample rate in Hz
+% frameSize    = size in samples
 % speechSignal = speech signal to be processed
 % title        = speech signal title
 % player       = audio player
